@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-app.use(express.json()); // Issue: This should be express.json(), not express.json
+app.use(express.json()); 
 require('dotenv').config(); // Load environment variables from a .env file
 
 let windowPrevState = []; // Array to store the previous window state
