@@ -10,6 +10,7 @@ let windowSize = 10; // Size of the sliding window
 // To run the server on port 5000
 app.get(`/numbers/:numbers_type`, async (req, res) => { 
     try {
+        windowPrevState=windowCurrState
         let numbers_type = req.params.numbers_type; // Extract the type of numbers from the request parameters
         
         // Call the external API to get the data based on the numbers_type
